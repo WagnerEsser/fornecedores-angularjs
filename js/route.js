@@ -5,7 +5,7 @@ angular.module('App').config(function ($routeProvider) {
 
         // páginas
         .when('/fornecedores', { templateUrl: 'views/fornecedor-list.html', controller: 'PageCtrl' })
-        .when('/fornecedor/cad', { templateUrl: 'views/fornecedor-cad.html', controller: 'PageCtrl' })
+        .when('/fornecedor/cad', { templateUrl: 'views/fornecedor-cad.html', controller: 'FornecedorCtrl' })
         .when('/fornecedor/single', { templateUrl: 'views/fornecedor-single.html', controller: 'PageCtrl' })
 
         // 404

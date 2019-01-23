@@ -6,12 +6,12 @@ angular.module('App').directive('ngCnpjValidator', function ($rootScope) {
             $scope.$watch($attrs.ngModel, function (value) {
                 if (value) {
                     if (validarCNPJ(value)) {
-                        ngModel.$setValidity($attrs.ngModel, true);
+                        $ngModel.$setValidity($attrs.ngModel, true);
                     } else {
-                        ngModel.$setValidity($attrs.ngModel, false);
+                        $ngModel.$setValidity($attrs.ngModel, false);
                     }
                 } else {
-                    ngModel.$setValidity($attrs.ngModel, false);
+                    $ngModel.$setValidity($attrs.ngModel, false);
                 }
             })
         }
@@ -68,5 +68,4 @@ function validarCNPJ(cnpj) {
         return false;
 
     return true;
-
 }

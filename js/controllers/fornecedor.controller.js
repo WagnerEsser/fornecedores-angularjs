@@ -1,8 +1,8 @@
-angular.module('App').controller('fornecedorCtrl', function ($scope, $rootScope) {
+angular.module('App').controller('FornecedorCtrl', function ($scope, $rootScope) {
 
     $scope.add = function(fornecedor) {
         // enviar requisição post
         alert("adição de novo fornecedor.");
-        alert(fornecedor);
+        console.log(fornecedor);
     };
 });
