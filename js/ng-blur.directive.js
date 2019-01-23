@@ -1,4 +1,4 @@
-angular.module('app').directive('ngBlur', function() {
+angular.module('App').directive('ngBlur', function() {
     return {
         restrict: 'A',
         require: 'ngModel',

@@ -1,9 +1,9 @@
-angular.module('app').directive('ngCnpjValidator', function () {
+angular.module('App').directive('ngCnpjValidator', function ($rootScope) {
     return {
         restrict: 'A',
         require: 'ngModel',
         link: function ($scope, $element, $attrs, $ngModel) {
-            $scope.$watch($attrs.ngModel, function () {
+            $scope.$watch($attrs.ngModel, function (value) {
                 if (value) {
                     if (validarCNPJ(value)) {
                         ngModel.$setValidity($attrs.ngModel, true);

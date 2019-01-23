@@ -1,0 +1,14 @@
+1) Instale node.js
+2) $ npm init  // pasta do projeto
+3) $ npm i angular
+4) $ npm i angular-route
+5) $ npm i bootstrap
+6) $ npm i -g sass
+	// para compilar: $ sass arquivo-origem.scss arquivo-destino.css
+	6.1) Criar atalho no package.json:
+	6.2) Adicionar em "scripts" a linha:
+		"compile-css": "sass scss/style.scss css/style.css"
+	6.3) $ npm run compile-css
+7) $ npm i http-server
+8) $ http-server  // porta padrão: 8080
+	// para alterar: $ http-server -p 8088

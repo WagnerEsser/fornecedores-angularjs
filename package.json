@@ -1,0 +1,25 @@
+{
+  "name": "fornecedores",
+  "version": "1.0.0",
+  "description": "SPA Fornecedores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-css": "sass scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WagnerEsser/fornecedores-angularjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WagnerEsser/fornecedores-angularjs/issues"
+  },
+  "homepage": "https://github.com/WagnerEsser/fornecedores-angularjs#readme",
+  "dependencies": {
+    "angular": "^1.7.6",
+    "angular-route": "^1.7.6",
+    "bootstrap": "^4.2.1"
+  }
+}

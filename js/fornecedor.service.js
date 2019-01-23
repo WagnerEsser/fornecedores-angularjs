@@ -1,4 +1,4 @@
-angular.module('app').service('FornecedorService', function($http) {
+angular.module('App').service('FornecedorService', function($http) {
 
     // método get do FornecedorService
     this.get = function() {
