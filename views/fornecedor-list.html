@@ -6,7 +6,7 @@
             <h1>SPA Fornecedores</h1>
         </div>
 
-        <table ng-if="fornecedores.lenght > 0" class="table">
+        <table ng-if="fornecedores.length > 0" class="table">
             <thead>
                 <th>Nome</th>
                 <th>CNPJ</th>
@@ -15,7 +15,7 @@
             </thead>
             <tbody>
                 <tr ng-repeat="fornecedor in fornecedores">
-                    <td>{{ fornecedor.nome }}</td>
+                    <td>{{ fornecedor.name }}</td>
                     <td>{{ fornecedor.cnpj }}</td>
                     <td>{{ fornecedor.email }}</td>
                     <td>{{ fornecedor.comment }}</td>
@@ -23,7 +23,7 @@
             </tbody>
         </table>
 
-        <p ng-if="!fornecedores.lenght > 0">Não existem fornecedores cadastrados ainda.</p>
+        <p ng-if="!fornecedores.length > 0">Não existem fornecedores cadastrados ainda.</p>
     </div>
 
 </div>

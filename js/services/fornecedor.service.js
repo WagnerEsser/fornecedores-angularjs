@@ -1,5 +1,5 @@
 angular.module('App').factory('FornecedorService', function ($http, URL_API) {
-    console.log("Entrei no service...");
+    
     return {
         listar: function () {
             return $http.get(URL_API);
