@@ -1,4 +1,4 @@
-angular.module('App').controller('EditCtrl', function ($routeParams, $scope, FornecedorService, $location, $http) {
+angular.module('App').controller('EditCtrl', function ($routeParams, $scope, FornecedorService, $location) {
 
     $scope.fornecedor = null;
 

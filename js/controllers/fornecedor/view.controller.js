@@ -1,4 +1,4 @@
-angular.module('App').controller('ViewCtrl', function ($routeParams, $scope, FornecedorService, $location, $http) {
+angular.module('App').controller('ViewCtrl', function ($routeParams, $scope, FornecedorService) {
     
     $scope.fornecedor = null;
 

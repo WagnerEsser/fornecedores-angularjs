@@ -1,4 +1,4 @@
-angular.module('App').controller('ListCtrl', function ($scope, FornecedorService, $location, $http) {
+angular.module('App').controller('ListCtrl', function ($scope, FornecedorService) {
 
     $scope.fornecedores = [];
 
