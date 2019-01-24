@@ -12,3 +12,4 @@
 7) $ npm i http-server
 8) $ http-server  // porta padrão: 8080
 	// para alterar: $ http-server -p 8088
+9) $ npm i cors

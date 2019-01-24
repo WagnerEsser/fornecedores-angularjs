@@ -1,11 +1,23 @@
-angular.module('App').service('FornecedorService', function($http) {
-
-    // método get do FornecedorService
-    this.get = function() {
-        return $http.get('localhost:8080/fornecedores');
-    };
-
-    // this.get = function(id_fornecedor) {
-    //     return $http.get('localhost:8080/fornecedores/' + id_fornecedor);
-    // }
+angular.module('App').factory('FornecedorService', function ($http, URL_API) {
+    console.log("Entrei no service...");
+    return {
+        listar: function () {
+            return $http.get(URL_API);
+        },
+        add: function (fornecedor) {
+            return $http.post(URL_API, fornecedor);
+        },
+        getById: function (id) {
+            return $http.get(URL_API + id);
+        },
+        update: function (fornecedor, id) {
+            return $http.put(URL_API + id, fornecedor);
+        },
+        delete: function (id) {
+            return $http.delete(URL_API + id);
+        },
+        searchByName: function (busca) {
+            return $http.get(URL_API + 'search/' + busca);
+        }
+    }
 });

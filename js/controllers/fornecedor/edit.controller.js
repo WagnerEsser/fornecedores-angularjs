@@ -1,0 +1,3 @@
+angular.module('App').controller('EditCtrl', function (/* $scope, $location, $http */) {
+    // ...
+});

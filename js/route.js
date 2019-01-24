@@ -4,9 +4,10 @@ angular.module('App').config(function ($routeProvider) {
         .when('/', { templateUrl: 'views/home.html', controller: "PageCtrl" })
 
         // páginas
-        .when('/fornecedores', { templateUrl: 'views/fornecedor-list.html', controller: 'PageCtrl' })
-        .when('/fornecedor/cad', { templateUrl: 'views/fornecedor-cad.html', controller: 'FornecedorCtrl' })
-        .when('/fornecedor/single', { templateUrl: 'views/fornecedor-single.html', controller: 'PageCtrl' })
+        .when('/fornecedores', { templateUrl: 'views/fornecedor-list.html', controller: 'ListCtrl' })
+        .when('/fornecedor/cad', { templateUrl: 'views/fornecedor-cad.html', controller: 'CreateCtrl' })
+        .when('/fornecedor/edit/:id', { templateUrl: 'views/fornecedor-edit.html', controller: 'EditCtrl' })
+        .when('/fornecedor/view/:id', { templateUrl: 'views/fornecedor-view.html', controller: 'ViewCtrl' })
 
         // 404
         .when('/404', { templateUrl: 'views/404.html', controller: 'PageCtrl' })

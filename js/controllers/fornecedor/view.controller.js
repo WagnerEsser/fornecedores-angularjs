@@ -1,0 +1,3 @@
+angular.module('App').controller('ViewCtrl', function (/* $scope, $location, $http */) {
+    // ...
+});

@@ -1,4 +1,4 @@
-angular.module('App').controller('FornecedorCtrl', function ($scope, $rootScope) {
+angular.module('App').controller('CreateCtrl', function ($scope, $rootScope) {
 
     $scope.add = function(fornecedor) {
         // enviar requisição post

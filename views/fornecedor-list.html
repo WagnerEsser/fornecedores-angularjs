@@ -1,26 +1,29 @@
-<p>fornecedor-list page</p>
+<div ng-controller="ListCtrl">
+    <p>ListCtrl body</p>
 
-<div class="container">
-    <div class="well">
-        <h1>SPA Fornecedores</h1>
+    <div class="container">
+        <div class="well">
+            <h1>SPA Fornecedores</h1>
+        </div>
+
+        <table ng-if="fornecedores.lenght > 0" class="table">
+            <thead>
+                <th>Nome</th>
+                <th>CNPJ</th>
+                <th>E-mail</th>
+                <th>Comment</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="fornecedor in fornecedores">
+                    <td>{{ fornecedor.nome }}</td>
+                    <td>{{ fornecedor.cnpj }}</td>
+                    <td>{{ fornecedor.email }}</td>
+                    <td>{{ fornecedor.comment }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p ng-if="!fornecedores.lenght > 0">Não existem fornecedores cadastrados ainda.</p>
     </div>
 
-    <table ng-if="fornecedores.lenght > 0" class="table">
-        <thead>
-            <th>Nome</th>
-            <th>CNPJ</th>
-            <th>E-mail</th>
-            <th>Comment</th>
-        </thead>
-        <tbody>
-            <tr ng-repeat="fornecedor in fornecedores">
-                <td>{{ fornecedor.nome }}</td>
-                <td>{{ fornecedor.cnpj }}</td>
-                <td>{{ fornecedor.email }}</td>
-                <td>{{ fornecedor.comment }}</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <p ng-if="!fornecedores.lenght > 0">Não existem fornecedores cadastrados ainda.</p>
 </div>
