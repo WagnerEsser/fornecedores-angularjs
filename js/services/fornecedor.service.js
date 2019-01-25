@@ -14,7 +14,6 @@ angular.module('App').factory('FornecedorService', function ($http, URL_API) {
             return $http.put(URL_API + id, fornecedor);
         },
         delete: function (id) {
-            console.log("deletadooooooooo");
             return $http.delete(URL_API + id);
         },
         searchByName: function (busca) {
