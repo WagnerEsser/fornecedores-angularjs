@@ -1,6 +1,8 @@
 # fornecedores-angularjs
 Projeto AngularJS para consumir a REST API fornecedores
 
+API: https://github.com/WagnerEsser/fornecedores
+
 ## Instalação
 
 1. Clone o repositório git: https://github.com/WagnerEsser/fornecedores-angularjs
