@@ -19,10 +19,10 @@
             <tbody>
                 <tr ng-repeat="fornecedor in fornecedores">
                     <td>{{ fornecedor.id }}</td>
-                    <td>{{ fornecedor.name }}</td>
-                    <td>{{ fornecedor.cnpj }}</td>
-                    <td>{{ fornecedor.email }}</td>
-                    <td>{{ fornecedor.comment }}</td>
+                    <td>{{ fornecedor.name | diminuir_string }}</td>
+                    <td>{{ fornecedor.cnpj | diminuir_string }}</td>
+                    <td>{{ fornecedor.email | diminuir_string }}</td>
+                    <td>{{ fornecedor.comment | diminuir_string }}</td>
                     <td>
                         <a href="#!/fornecedor/view/{{ fornecedor.id }}">
                             <button type="button" class="btn btn-success btn-sm">

@@ -1,29 +1,39 @@
-<div ng-controller="EditCtrl">
-    <p>EditCtrl body</p>
+<div ng-controller="EditCtrl" class="container mt-4">
+    <div class="container-fluid card app-box">
+        <h3>
+            <i class="fa fa-plus "></i>
+            Edição do fornecedor
+            <small class="text-muted">{{ fornecedor.name }}</small>
+        </h3>
 
-    <form name="formFornecedor">
-        <div class="form-group">
-            <label>Nome</label>
-            <input ng-blur ng-model="fornecedor.name" required type="text" class="form-control" />
-        </div>
+        <hr />
 
-        <div class="form-group">
-            <label>CNPJ</label>
-            <input ng-blur ng-model="fornecedor.cnpj" ng-cnpj-validator ng-pattern="/^[0-9]{2}.[0-9]{3}.[0-9]{3}/[0-9]{4}-[0-9]{2}$/"
-                type="text" class="form-control" />
-        </div>
+        <form name="formFornecedor">
+            <div class="form-group">
+                <label><strong>Nome</strong></label>
+                <input ng-blur ng-model="fornecedor.name" required type="text" class="form-control" />
+            </div>
 
-        <div class="form-group">
-            <label>E-mail</label>
-            <input ng-blur ng-model="fornecedor.email" required type="email" class="form-control" />
-        </div>
+            <div class="form-group">
+                <label><strong>CNPJ</strong> <span class="text-muted">(Ex. de cnpj válido: 29.505.800/0001-46)</span></label>
+                <input ng-blur ng-model="fornecedor.cnpj" ng-cnpj-validator ng-pattern="/^[0-9]{2}.[0-9]{3}.[0-9]{3}/[0-9]{4}-[0-9]{2}$/"
+                    type="text" class="form-control" />
+            </div>
 
-        <div class="form-group">
-            <label>Comment</label>
-            <input ng-blur ng-model="fornecedor.comment" required type="textarea" class="form-control" />
-        </div>
+            <div class="form-group">
+                <label><strong>E-mail</strong></label>
+                <input ng-blur ng-model="fornecedor.email" required type="email" class="form-control" />
+            </div>
 
-        <button ng-click="update(fornecedor)" ng-disabled="formFornecedor.$invalid" type="submit" class="btn btn-primary">Salvar</button>
-    </form>
+            <div class="form-group">
+                <label><strong>Comment</strong></label>
+                <input ng-blur ng-model="fornecedor.comment" required type="textarea" class="form-control" />
+            </div>
 
+            <button ng-click="update(fornecedor)" ng-disabled="formFornecedor.$invalid" class="btn btn-success">
+                Atualizar
+            </button>
+        </form>
+
+    </div>
 </div>

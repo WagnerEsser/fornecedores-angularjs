@@ -1,8 +1,30 @@
-<div ng-controller="ViewCtrl">
-    <p>ViewCtrl body</p>
+<div ng-controller="ViewCtrl" class="container mt-4">
+    <div class="container-fluid card app-box">
+        <h3>
+            <i class="fa fa-briefcase "></i>
+            Fornecedor: {{ fornecedor.name }}
+        </h3>
 
-    <p>{{ fornecedor.name }}</p>
-    <p>{{ fornecedor.cnpj }}</p>
-    <p>{{ fornecedor.email }}</p>
-    <p>{{ fornecedor.comment }}</p>
+        <hr />
+
+        <p class="mt-4">
+            <strong><i class="fa fa-address-card"></i>&nbsp; CNPJ:</strong>&nbsp;
+            {{ fornecedor.cnpj }}
+        </p>
+        <p>
+            <strong><i class="fa fa-envelope"></i>&nbsp; E-mail:</strong>&nbsp;
+            {{ fornecedor.email }}
+        </p>
+        <p>
+            <strong><i class="fa fa-comment"></i>&nbsp; Comentário:</strong>&nbsp;
+            {{ fornecedor.comment }}
+        </p>
+
+        <a href="#!/fornecedor/edit/{{ fornecedor.id }}" class="mt-4">
+            <button type="button" class="btn btn-primary btn-sm">
+                <i class="fa fa-pencil"></i>
+                Editar
+            </button>
+        </a>
+    </div>
 </div>
