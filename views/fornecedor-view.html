@@ -1,9 +1,21 @@
 <div ng-controller="ViewCtrl" class="container mt-4">
     <div class="container-fluid card app-box">
-        <h3>
-            <i class="fa fa-briefcase "></i>
-            Fornecedor: {{ fornecedor.name }}
-        </h3>
+        <div class="row">
+            <div class="col-8">
+                <h3>
+                    <i class="fa fa-briefcase "></i>
+                    Fornecedor: {{ fornecedor.name }}
+                </h3>
+            </div>
+            <div class="col-4">
+                <a href="#!/fornecedor/delete/{{ fornecedor.id }}" class="float-right">
+                    <button class="btn btn-sm btn-danger">
+                        <i class="fa fa-trash"></i>
+                        Excluir
+                    </button>
+                </a>
+            </div>
+        </div>
 
         <hr />
 

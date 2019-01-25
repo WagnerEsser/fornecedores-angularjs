@@ -8,6 +8,7 @@ angular.module('App').config(function ($routeProvider) {
         .when('/fornecedor/cad', { templateUrl: 'views/fornecedor-cad.html', controller: 'CreateCtrl' })
         .when('/fornecedor/edit/:id', { templateUrl: 'views/fornecedor-edit.html', controller: 'EditCtrl' })
         .when('/fornecedor/view/:id', { templateUrl: 'views/fornecedor-view.html', controller: 'ViewCtrl' })
+        .when('/fornecedor/delete/:id', { templateUrl: 'views/fornecedor-delete.html', controller: 'DeleteCtrl' })
 
         // demais
         .when('/contato', { templateUrl: 'views/contato.html', controller: 'PageCtrl' })
