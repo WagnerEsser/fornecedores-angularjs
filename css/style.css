@@ -1,3 +1,47 @@
+@import "../node_modules/font-awesome/css/font-awesome.css";
+html, body {
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
+header {
+  background-color: #f8f8f8;
+}
+header nav {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+
+section {
+  min-height: 60% !important;
+}
+
+footer {
+  min-height: 70px !important;
+  padding-top: 10px !important;
+  background-color: #1b1c1d;
+  color: white;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.app-logo {
+  width: 100%;
+}
+
+.app-title {
+  color: #970000;
+}
+
+.app-title:hover {
+  color: #ff7c23;
+}
+
+.app-icon-404 {
+  font-size: 200px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -12,14 +12,13 @@
 </head>
 
 <body ng-app="App">
-    
-    <div ng-include='"templates/header.html"'></div>
 
-    <div ng-view></div>
-    
-    <div ng-include='"templates/footer.html"'></div>
+    <header ng-include='"templates/header.html"'></header>
 
-    
+    <section ng-view></section>
+
+    <footer ng-include='"templates/footer.html"'></footer>
+
     <!-- angular scritps -->
     <script type="application/javascript" src="node_modules/angular/angular.min.js"></script>
     <script type="application/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
@@ -27,16 +26,16 @@
     <!-- app scripts -->
     <script type="application/javascript" src="js/app.js"></script>
     <script type="application/javascript" src="js/route.js"></script>
-    
+
     <script type="application/javascript" src="js/directives/ng-blur.directive.js"></script>
     <script type="application/javascript" src="js/directives/ng-cnpj-validator.directive.js"></script>
-    
+
     <script type="application/javascript" src="js/controllers/page.controller.js"></script>
     <script type="application/javascript" src="js/controllers/fornecedor/create.controller.js"></script>
     <script type="application/javascript" src="js/controllers/fornecedor/edit.controller.js"></script>
     <script type="application/javascript" src="js/controllers/fornecedor/list.controller.js"></script>
     <script type="application/javascript" src="js/controllers/fornecedor/view.controller.js"></script>
-    
+
     <script type="application/javascript" src="js/services/fornecedor.service.js"></script>
 
     <!-- bootstrap scripts -->

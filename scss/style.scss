@@ -1,0 +1,220 @@
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+$primary-color: #970000;
+$second-color: #ff7c23;
+$border-color: #dadada;
+$background-primary-color: #f8f8f8;
+$footer-color: #1b1c1d;
+
+// =========== geral =========== //
+
+html, body {
+    height: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+header {
+    background-color: $background-primary-color;
+
+    nav {
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+section {
+    min-height: 60% !important;
+}
+
+footer {
+    min-height: 70px !important;
+    padding-top: 10px !important;
+    background-color: $footer-color;
+    color: white;    
+}
+
+a, a:hover { text-decoration: none; }
+
+// =========== app =========== //
+
+// ===== header ===== //
+
+.app-logo {
+    width: 100%;
+}
+
+.app-title {
+    color: $primary-color;
+}
+
+.app-title:hover {
+    color: $second-color;
+}
+
+// ===== 404 ===== //
+
+.app-icon-404{
+    font-size: 200px;
+}
+// .app-icon {
+//     padding-top: 0 !important;
+//     padding-bottom: 0 !important;
+// }
+
+// .app-icon i {
+//     margin: 0 !important;
+// }
+
+// .app-grid {
+//     margin-top: 0 !important;
+// }
+
+// .app-grid-message{
+//     margin-top: 50px !important;
+// }
+
+// .app-not-segment {
+//     border: 0 !important;
+//     box-shadow: none !important;
+// }
+
+// .app-content {
+//     padding-bottom: 1% !important;
+// }
+
+// .app-dropdown {
+//     text-align: center !important;
+//     padding: 20px 0 10px 0 !important;
+// }
+
+// .app-input-small div {
+//     min-width: 8em !important;
+// }
+
+// .app-input-checkbox {
+//     margin-top: 0 !important;
+//     padding-top: 10px !important;
+//     padding-bottom: 8px !important;
+//     padding-left: 15px !important;
+//     box-shadow: none !important;
+// }
+
+// .app-label-crm{
+//     color: red;
+// }
+
+// .errorlist {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+// }
+
+// .app-input-radio {
+//     box-shadow: none !important;
+//     padding: 0;
+//     padding-top: 10px;
+//     margin: 0;
+// }
+
+// .app-input-radio ul {
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+// }
+
+// .app-input-radio ul li {
+//     display: inline;
+//     margin-right: 20px;
+// }
+
+// .ui.large.menu {
+//     margin-top: 0;
+// }
+
+// .app-proximasConsultas {
+//     margin-top: 50px;
+// }
+
+// .app-title-edit-page {
+//     text-align: center;
+// }
+
+// .app-page {
+//     margin-bottom: 25px !important;
+// }
+
+// .app-segment {
+//     margin-top: 20px !important;
+//     margin-bottom: 30px !important;
+//     padding: 30px 10px 10px 10px !important;
+// }
+
+// .app-segment-border {
+//     border-top: 2px solid red !important;
+// }
+
+// .app-table-form {
+//     margin: 40px 0 40px 0 !important;
+// }
+
+// .app-div-message {
+//     margin-bottom: 20px !important;
+// }
+
+// .app-pagination {
+//     margin-bottom: 20px !important;
+// }
+
+// .app-form-filter{
+//     margin-top: 40px !important;
+// }
+
+// .app-form-filter-group{
+//     display: inline;
+// }
+
+// .app-green{
+//     color: green;
+// }
+// .app-red{
+//     color: red !important;
+// }
+
+// .app-info-texto{
+//     font-size: 16px;
+//     text-align: justify;
+//     padding: 15px;
+// }
+// .app-margin-rigth{
+//     margin-right: 91px !important;
+//     margin-bottom: 25px !important;
+// }
+// div.ten.wide.column.app-margin-bottom{
+//     margin-bottom: 25px;
+// }
+
+// input[disabled]{
+//     border-color: #aaaaaa !important;
+// }
+
+// i.search.icon {
+//     margin-right: 0 !important;
+//     margin-left: 0 !important;
+// }
+
+// .app-incapaz {
+//     font-weight: bold;
+//     color: red;
+// }
+
+// .app-button-escolha-papel a{
+//     width: 300px !important;
+//     height: 80px !important;
+//     margin-bottom: 15px !important;
+//     line-height: 45px !important;
+// }
+
+// .border-segment{
+// 	border-top: 2px solid #6F0017 !important;
+// }
