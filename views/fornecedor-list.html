@@ -1,18 +1,20 @@
-<div ng-controller="ListCtrl">
-    <p>ListCtrl body</p>
+<div ng-controller="ListCtrl" class="container mt-4">
+    <div class="container-fluid card app-box">
+        <h3>
+            <i class="fa fa-group"></i>
+            Lista de fornecedores
+        </h3>
 
-    <div class="container">
-        <div class="well">
-            <h1>SPA Fornecedores</h1>
-        </div>
+        <hr ng-if="!fornecedores.length > 0" />
 
-        <table ng-if="fornecedores.length > 0" class="table">
+        <table ng-if="fornecedores.length > 0" class="table table-hover mt-4">
             <thead>
                 <th>ID</th>
                 <th>Nome</th>
                 <th>CNPJ</th>
                 <th>E-mail</th>
                 <th>Comment</th>
+                <th><i class="fa fa-cogs"></i> Ações</th>
             </thead>
             <tbody>
                 <tr ng-repeat="fornecedor in fornecedores">
@@ -21,11 +23,30 @@
                     <td>{{ fornecedor.cnpj }}</td>
                     <td>{{ fornecedor.email }}</td>
                     <td>{{ fornecedor.comment }}</td>
+                    <td>
+                        <a href="#!/fornecedor/view/{{ fornecedor.id }}">
+                            <button type="button" class="btn btn-success btn-sm">
+                                <i class="fa fa-eye"></i>
+                                Visualizar
+                            </button>
+                        </a>
+                        <a href="#!/fornecedor/edit/{{ fornecedor.id }}">
+                            <button type="button" class="btn btn-primary btn-sm">
+                                <i class="fa fa-pencil"></i>
+                                Editar
+                            </button>
+                        </a>
+                    </td>
                 </tr>
             </tbody>
         </table>
 
-        <p ng-if="!fornecedores.length > 0">Não existem fornecedores cadastrados ainda.</p>
-    </div>
+        <p ng-if="!fornecedores.length > 0" class="alert alert-warning">
+            Não existem fornecedores cadastrados ainda.
 
+            <a href="#!/fornecedor/cad">Clique aqui</a>
+            para cadastrar um novo fornecedor.
+        </p>
+
+    </div>
 </div>

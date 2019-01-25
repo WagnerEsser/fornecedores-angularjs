@@ -24,7 +24,7 @@ header {
 }
 
 section {
-    min-height: 60% !important;
+    min-height: 50% !important;
 }
 
 footer {
@@ -39,8 +39,8 @@ a, a:hover { text-decoration: none; }
 // =========== app =========== //
 
 .app-box{
-    border-radius: 10px;
-    
+    padding: 25px;
+    border-top: 2px solid $primary-color;
 }
 
 // ===== header ===== //
