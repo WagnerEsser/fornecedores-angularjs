@@ -20,7 +20,6 @@ section {
 footer {
   min-height: 70px !important;
   padding-top: 10px !important;
-  background-color: #1b1c1d;
   color: white;
 }
 
@@ -42,6 +41,10 @@ a, a:hover {
 
 .app-icon-404 {
   font-size: 200px;
+}
+
+.app-logo-contato {
+  width: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */

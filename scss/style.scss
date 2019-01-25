@@ -38,6 +38,11 @@ a, a:hover { text-decoration: none; }
 
 // =========== app =========== //
 
+.app-box{
+    border-radius: 10px;
+    
+}
+
 // ===== header ===== //
 
 .app-logo {
@@ -57,6 +62,14 @@ a, a:hover { text-decoration: none; }
 .app-icon-404{
     font-size: 200px;
 }
+
+// ===== Contato ===== //
+
+.app-logo-contato {
+    width: 20%;
+}
+
+
 // .app-icon {
 //     padding-top: 0 !important;
 //     padding-bottom: 0 !important;
